@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Spongebob";
+  src: url("./sponge.otf");
+}
+
+:root {
+  font-size: 10px;
+  font-family: "Spongebob";
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  height: 10rem;
+  color: white;
+}
+
+.icon-div {
+  margin-left: 2rem;
+  position: absolute;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+button {
+  font-family: inherit;
+}
+#button-div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-div > button {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+#button-div > button:hover {
+  transform: translateY(-10px);
+  border-bottom: 1px white solid;
+  cursor: pointer;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px 0px;
+  /* background-image: url(./images/background.jpg);*/
+  height: 100%;
+  background-color: aquamarine;
+  /* background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+#content {
+  text-align: center;
+}
+
+header {
+  margin: 5rem auto 2rem auto;
+  font-size: 4rem;
+}
+
+p {
+  margin: 2rem auto;
+  font-size: 1.5rem;
+}
+
+#menu-grid {
+  display: grid;
+  width: 60%;
+  margin: 5rem auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  border: 5px solid;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper-div {
+  margin: 2rem;
+  width: 80%;
+  padding-bottom: 80%;
+  position: relative;
+}
+
+.menu-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(30, 30, 30, 1);
+}
+
+.menu-item-image {
+  margin-top: 1rem;
+  width: 50%;
+  height: auto;
+}
+
+.menu-item-title {
+  font-size: 2rem;
+  margin: 1rem 0.2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #menu-grid {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #menu-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .icon-div {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #menu-grid {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    font-size: 20px;
+  }
+}
