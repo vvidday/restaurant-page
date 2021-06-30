@@ -53,13 +53,8 @@ html {
 
 body {
   margin: 0px 0px;
-  /* background-image: url(./images/background.jpg);*/
   height: 100%;
   background-color: aquamarine;
-  /* background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 
 #content {
@@ -123,6 +118,33 @@ p {
   margin: 1rem 0.2rem;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+#contact-text {
+  margin: 5rem;
+  font-size: 3rem;
+}
+
+#call-button {
+  font-size: 2rem;
+  padding: 1rem;
+  border: 2px solid;
+  border-radius: 1rem;
+}
+
+#call-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-10px);
+}
+
+#joke-text {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
 @media screen and (max-width: 1000px) {
   #menu-grid {
     width: 80%;
@@ -135,7 +157,7 @@ p {
     grid-template-rows: auto;
   }
   .icon-div {
-    visibility: hidden;
+    opacity: 0%;
   }
 }
 

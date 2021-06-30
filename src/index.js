@@ -4,9 +4,8 @@ import {Nav} from './nav.js';
 import { navSwitchListener } from './listeners';
 
 const mainDiv = document.getElementById("content");
-
 document.body.insertBefore(Nav().getNav(), mainDiv);
-//mainDiv.appendChild(getHomeDiv());
+
 
 const Swapper = () =>{
     const buttons = document.getElementById("button-div").children;
@@ -16,10 +15,12 @@ const Swapper = () =>{
     })
 }
 
-
+// Set content to homepage
 mainDiv.appendChild(getHomeDiv());
+
+// Add listeners to nav buttons
 const buttons = document.getElementById("button-div").children;
-console.log(buttons);
 for(let b of buttons){
     b.addEventListener("click", navSwitchListener);
 }
+
