@@ -40,16 +40,12 @@ p3.src = pat3;
 let callState = 0;
 
 function callListener(){
-    console.log(document.getElementById("call-button"));
-    console.log(this);
     switch(callState){
         case 0:
             p1.play();
             callState = 1;
             this.classList.add("invisible");
-            this.removeEventListener("click", callListener);
             setTimeout(()=> {this.classList.remove("invisible")}, 6000);
-            this.addEventListener("click", callListener);
             break;
         case 1:
             p2.play();

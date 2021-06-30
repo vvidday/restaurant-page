@@ -9,7 +9,6 @@ document.body.insertBefore(Nav().getNav(), mainDiv);
 
 const Swapper = () =>{
     const buttons = document.getElementById("button-div").children;
-    console.log(buttons);
     buttons.forEach((b) => {
         b.addEventListener("click", navSwitchListener);
     })
